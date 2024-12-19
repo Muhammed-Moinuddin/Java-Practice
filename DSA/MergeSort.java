@@ -1,5 +1,6 @@
 import java.util.Arrays;
 
+//By M.Moinuddin
 public class MergeSort {
     public static void conquer(int arr[], int si, int mid, int ei){
         int merged[] = new int[ei - si + 1];
@@ -40,8 +41,9 @@ public class MergeSort {
     }
     public static void main(String args[]){
         int arr[] = {6,3,9,5,2,8};
+        System.out.println("Unsorted Array " + Arrays.toString(arr));
         int n = arr.length;
-        divide(arr, 0, n-1);    
-        System.out.println(Arrays.toString(arr));
+        divide(arr, 0, n-1);
+        System.out.println("Sorted Array " + Arrays.toString(arr));
     }
 }
